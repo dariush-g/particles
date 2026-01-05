@@ -19,7 +19,7 @@ target_include_directories(particles PRIVATE
 
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
-find_package(glm REQUIRED)
+find_package(glm CONFIG REQUIRED)
 
 
-target_link_libraries(particles PRIVATE OpenGL::GL glfw glm m)
+target_link_libraries(particles PRIVATE OpenGL::GL glfw glm::glm m)
